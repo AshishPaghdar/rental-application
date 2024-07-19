@@ -6,15 +6,22 @@ This project implements a simple tool rental application for a store like Home D
 
 ## Technologies Used
 
+- Java 17
 - Spring Boot 3.2.3
 - Spring Data JPA
 - Spring Web
 - Flyway for database migrations
-- MySQL as the database
+- MySQL as the database (8.0 or later)
 - Lombok
 - MapStruct for object mapping
 - SpringDoc OpenAPI for API documentation
 - Swagger Suite
+
+## Create the database in mysql and setup the database configuration for the same. Like URL, username password, etc..
+       
+  ``` bash
+  create database rental_application
+  ```
 
 ## Running the Application
 
@@ -63,6 +70,7 @@ You could alternatively also use Postman to test the application.
     "finalCharge": "$8.14"
     }
     ```
+> Note: `We have put(rental-application-collection.json) the collection of APIs. You can import the APIs collection into postman`
 
 ## Database
 The application uses three main entities: 
